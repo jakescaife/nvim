@@ -12,6 +12,7 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"tsserver",
+					"csharp_ls",
 				}
 			})
 		end
@@ -23,6 +24,7 @@ return {
 
 			lspconfig.lua_ls.setup {}
 			lspconfig.tsserver.setup {}
+			lspconfig.csharp_ls.setup {}
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
