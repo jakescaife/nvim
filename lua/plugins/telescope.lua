@@ -11,7 +11,7 @@ return {
 			vim.keymap.set("n", "<leader>gf", telescope.git_files, { desc = "[G]it [F]iles" })
 			vim.keymap.set("n", "<leader>gs", telescope.git_status, { desc = "[G]it [S]tatus" })
 			vim.keymap.set("n", "<leader>gc", telescope.git_commits, { desc = "[G]it [C]ommits" })
-		end
+		end,
 	},
 	{
 		"nvim-telescope/telescope-ui-select.nvim",
@@ -19,11 +19,11 @@ return {
 			require("telescope").setup({
 				extensions = {
 					["ui-select"] = {
-						require("telescope.themes").get_dropdown {}
-					}
-				}
+						require("telescope.themes").get_dropdown({}),
+					},
+				},
 			})
 			require("telescope").load_extension("ui-select")
-		end
+		end,
 	},
 }
