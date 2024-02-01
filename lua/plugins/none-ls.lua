@@ -8,6 +8,6 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format, { desc = "[F]ormat [F]ile" })
+		vim.keymap.set("n", "<leader>uf", vim.lsp.buf.format, { desc = "[U]pdate [F]ormatting" })
 	end,
 }
